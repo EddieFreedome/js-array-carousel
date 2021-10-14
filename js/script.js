@@ -34,6 +34,16 @@ const dotsContainer = document.querySelector(".dots-container")
 let currentIndex = 0 //valore predefinito
 
 for (let i = 0; i < arrImg.length; i++) {
-    const currentImg = array[i];
-    
+    const currentImg = arrImg[i];
+    let classeActive = "";
+
+  // aggiungi la classe active perchè è il primo della lista
+  if (i === currentIndex) {
+    classeActive = "active";
+  }
+        
+    // devo creare tag img con src
+    const tagImg = `<img class="${classeActive}" src="${urlImgCorrente}" alt="immagine #${i}">`;
+    const tagDot = `<span class="dot ${classeActive}"></span>`;
+
 }
